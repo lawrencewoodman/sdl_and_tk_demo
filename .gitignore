@@ -1,0 +1,10 @@
+sdl_and_tk_demo
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+*.cmake
+Makefile
+
+# Vim files
+*.swp
