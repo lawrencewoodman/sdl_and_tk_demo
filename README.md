@@ -26,7 +26,7 @@ Finally to run the program:
 
 Explanation
 -----------
-To embed an SDL surface in another window you have to alter the `SDL_WINDOWID` environmental variable so that it matches the id of the window that you want the SDL surface embedded in.  This must be done after the main window is displayed and before SDL_init() is called.  For further information have a look at [How to Embed an SDL Surface in a Tk Window](http://techtinkering.com/2012/06/26/embedding-an-sdl-surface-in-a-tk-window/)
+To embed an SDL surface in another window you have to alter the `SDL_WINDOWID` environmental variable so that it matches the id of the window that you want the SDL surface embedded in.  This must be done after the main window is displayed and before SDL_Init() is called.  For further information have a look at [Embedding an SDL Surface in a Tk Window](http://techtinkering.com/2012/06/26/embedding-an-sdl-surface-in-a-tk-window/)
 
 Contributions
 -------------
