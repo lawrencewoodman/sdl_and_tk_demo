@@ -10,7 +10,7 @@ proc handleKey {key} {
 wm title . {Demo of using SDL embedded in a Tk Window}
 wm protocol . WM_DELETE_WINDOW {destroy_window}
 
-frame .screen -width 400 -height 400
+frame .screen -width 400 -height 400 -background ""
 pack .screen
 
 frame .buttons
@@ -31,4 +31,4 @@ pack .buttons -side left -expand 1 -fill both
 pack .quit -side left -expand 1 -fill both
 
 bind all <KeyRelease> {handleKey %K}
-bind . <FocusIn> {screen_refresh}
+bind . <Expose> {screen_refresh}
