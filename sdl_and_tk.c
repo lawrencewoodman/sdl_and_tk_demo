@@ -25,20 +25,20 @@ int
 main(int argc, char *argv[])
 {
   if (!TkWin_init()) {
-    return 0;
+    return 1;
   }
 
   if (!BallScreen_init(TkWin_getWindowID(), screen_width,
         screen_height, screen_depth)) {
-    return 0;
+    return 1;
   }
 
   if (!Ball_init(BallScreen_getScreenSurface(),
                  screen_width/2, screen_height/2, ball_step)) {
-    return 0;
+    return 1;
   }
 
   event_loop();
 
-  return 1;
+  return 0;
 }
